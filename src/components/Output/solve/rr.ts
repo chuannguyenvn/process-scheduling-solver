@@ -77,7 +77,6 @@ export const rr = (
       return (
         p.at <= currentTime &&
         p !== processToExecute &&
-        !readyQueue.includes(p) &&
         unfinishedJobs.includes(p)
       );
     });
